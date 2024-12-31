@@ -1,33 +1,96 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-details {
+    flex-grow: 1;
+}
+
+.header-details h1 {
+    margin: 0;
+}
+
+.header-details p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.header-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+.projects, .experience, .skills, .resources {
+    padding: 20px;
+    margin: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-block {
+    padding: 10px 15px;
+    background: #00a193;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skill-block:hover {
+    background: #00b5a4;
+}
+
+.resources ul, .experience ul, .projects ul {
+    list-style: none;
     padding: 0;
 }
 
-header {
-    background-color: #6200ea;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.resources li, .experience li, .projects li {
+    margin: 10px 0;
 }
 
-main {
-    margin: 20px;
-    text-align: center;
+.resources a {
+    text-decoration: none;
+    color: #007BFF;
 }
 
-button {
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #4500a3;
+.resources a:hover {
+    text-decoration: underline;
 }

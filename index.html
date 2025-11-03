@@ -5,77 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YL's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-container">
-            <img src="./dolce.jpg" alt="My Picture" class="profile-picture">
-            <div class="header-details">
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./dolce.jpg" alt="Yanlin Chen" class="profile-picture">
                 <h1>Yanlin Chen</h1>
-                <p>CS @ CMU</p>
-                <div class="header-links">
+                <p class="sidebar-subtitle">B.S. Computer Science<br>Minor in Mathematics<br>@ CMU</p>
+                <div class="sidebar-links">
                     <a href="https://github.com/yl10016" target="_blank">GitHub</a>
                     <a href="https://linkedin.com/in/yanlin16" target="_blank">LinkedIn</a>
-                    <a href="./Yanlin_Chen_resume6.pdf" download>CV</a>
+                    <a href="#" class="resource-link" data-pdf="./Yanlin_Chen_resume.pdf">Resume</a>
                 </div>
             </div>
-        </div>
-    </header>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-nav-list">
+                    <li><a href="#work-experience" class="nav-link active">-&#9;Work Experience</a></li>
+                    <li><a href="#research-experience" class="nav-link">-&#9;Research/Relevant Experience</a></li>
+                    <li><a href="#projects" class="nav-link">-&#9;Projects</a></li>
+                    <li><a href="#skills" class="nav-link">-&#9;Skills</a></li>
+                    <li><a href="#awards" class="nav-link">-&#9;Awards</a></li>
+                    <li><a href="#resources" class="nav-link">-&#9;Resources</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Computer Systems</strong> </li>
-                <ol> - Developed a proxy (compatible with Mozilla Firefox), shell (back/foreground job control and I/O redirection), malloc
-                    (best fit with segregated lists), and cache (LRU) simulator totaling around 3000 lines </ol>
-            <li><strong>Micro-mechanical Analysis of Shape Memory Based Engines</strong> </li>
-                <ol> - Guided/trained by Joel Tan, published in Applied Phyics A: 
-                    <a href="https://link.springer.com/article/10.1007/s00339-021-04810-4" target="_blank">link</a> </ol>
-        </ul>
-    </section>
+        <!-- Main Content -->
+        <main class="main-content">
+        <hr class="section-divider">
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="section experience-section">
+            <h2>Work Experience</h2>
+            <ul class="section-bullet-list">
+                <li>
+                    <div class="exp-card">
+                        <h3>Network Product (SWE) Intern, Cisco, San Jose <span class="exp-date">May 2025 - Aug 2025</span></h3>
+                        <ul>
+                            <li>Developed AI-driven, remotely hosted and Dockerized Flask application to automate bug triage and root cause analysis (RCA) by retrieving and correlating cluster, device, and codebase data using LangChain agents enhanced with API/CLI tools, MCP servers, local regex search, and token usage tracking (and general traces monitoring) via Langfuse.</li>
+                            <li>Integrated the solution as a VSCode extension to enable Copilot-powered, inline code fix suggestions directly within the developer workflow, and implemented fast similarity search of existing CDETS bugs using a Milvus vector database with TF-IDF and cosine matching to surface relevant existing issues.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp-card">
+                        <h3>Institute of High Performance Computing, A*STAR <span class="exp-date">May 2024 - July 2024</span></h3>
+                        <ul>
+                            <li>Built and ran circuits in Qiskit to develop and evaluate a zero-noise extrapolation (ZNE) approach using the Parameter Shift Rule (PSR), to perform error mitigation without increasing the circuit depth.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp-card">
+                        <h3>Physics Instructor at NUS High School of Math and Science <span class="exp-date">2021 - 2023</span></h3>
+                        <ul>
+                            <li>Trained a select group of students in preparation for national physics research tournaments: coached students in physics, mathematical modelling, programming, electronic circuit and mechanical setup construction and design.</li>
+                            <li>Taught participants Mathematica and Computational Fluid Dynamics software such as COMSOL and Ansys.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Chamanzar Group, Carnegie Mellon University </strong> </li>
-                <ol> - Design and fabricate SiC-based quantum photonic devices that utilize optical detection methods and the Zeeman effect
-                    to detect weak magnetic fields generated by neural activity</ol>
-            <li><strong>Institute of High Performance Computing, A*STAR </strong> </li>
-                <ol> - Worked under Dr. Jayne Thompson to use the Parameter Shift Rule (PSR) to perform Zero Noise Extrapolation
-                    (ZNE) without increasing circuit depth </ol>
-                <ol> - Built and ran circuits in Qiskit to experimentally verify if PSR ZNE outperforms the traditional ZNE</ol>
-            <li><strong>NUS High School of Math and Science </strong> </li>
-                <ol> - Trained a selective group of students in preparation for national physics research tournaments: coached students in
-                    physics, mathematical modelling, programming, electronic circuit and mechanical setup construction/design </ol>
-                <ol> - Taught participants Mathematica and Computational Fluid Dynamics software such as COMSOL and Ansys</ol>
-        </ul>
-    </section>
+        <hr class="section-divider">
+        <!-- Research/Relevant Experience Section -->
+        <section id="research-experience" class="section experience-section">
+            <h2>Research/Relevant Experience</h2>
+            <ul class="section-bullet-list">
+                <li>
+                    <div class="exp-card">
+                        <h3>Chamanzar Group, Carnegie Mellon University <span class="exp-date">Sept 2024 - Present</span></h3>
+                        <ul>
+                            <li>Co-designed microwave antenna component and contributed to optimizing the Optically Detected Magnetic Resonance (ODMR) readout methodology in the fabrication of SiC-based quantum photonic devices that utilize optical detection methods and the Zeeman effect to detect weak magnetic fields generated by neural activity.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp-card">
+                        <h3>Jane Street INSIGHT Program <span class="exp-date">Jan 2025</span></h3>
+                        <ul>
+                            <li>One of 30 participants selected for SWE track; built a trading algorithm (in Python) and traded in a virtual exchange.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp-card">
+                        <h3>Institute of High Performance Computing, A*STAR <span class="exp-date">Dec 2022 - June 2023</span></h3>
+                        <ul>
+                            <li>Developed python-based platform to analyze user data for Ang et al.’s path-drawing option generation task, enabling objective quantification of creativity without cultural bias.</li>
+                            <li>Implemented platform in a cognitive study to derive uniqueness and diversity scores for each participant.</li>
+                            <li>Obtained technology disclosure and published in Scandinavian Journal of Psychology (<a href="https://doi.org/10.1111/sjop.13112" target="_blank">doi.org/10.1111/sjop.13112</a>).</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills & Languages</h2>
-        <div class="skills-container">
-            <div class="skill-block">Python</div>
-            <div class="skill-block">C</div>
-            <div class="skill-block">x86-Assembly</div>
-            <div class="skill-block">Standard ML</div>
-            <div class="skill-block">Qiskit</div>
-            <div class="skill-block">Mathematica</div>
-        </div>
-    </section>
+        <hr class="section-divider">
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2>Projects</h2>
+            <ul class="section-bullet-list">
+                <li>
+                    <div class="proj-card">
+                        <h3>Distributed Systems (in Go) <span class="proj-date">Sept 2025 - Present</span></h3>
+                        <ul>
+                            <li>Implemented the Raft consensus algorithm, a replicated state machine protocol that serves as an alternative to Paxos.</li>
+                            <li>Built a custom reliable transport protocol (Live Sequence Protocol) on top of UDP that leveraged goroutines and sliding-window mechanisms to ensure ordered delivery, integrity checks, exponential backoff retransmissions, and fault-tolerant client–server coordination for parallel hashing tasks (used in a distributed bitcoin miner scenario).</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="proj-card">
+                        <h3>Computer Systems and Programs (in C) <span class="proj-date">Aug 2024 - Dec 2024</span></h3>
+                        <ul>
+                            <li>Developed a proxy (compatible with Mozilla Firefox), shell (back/foreground job control and I/O redirection), malloc (best fit with segregated lists), and cache (LRU) simulator totaling around 4000 lines.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="proj-card">
+                        <h3>Micro-mechanical analysis of shape memory based engines <span class="proj-date">Nov 2019 - Aug 2021</span></h3>
+                        <ul>
+                            <li>Conducted original research published in peer-reviewed journal Appl. Phys. A. (<a href="https://link.springer.com/article/10.1007/s00339-021-04810-4" target="_blank">doi.org/10.1007/s00339-021-04810-4</a>).</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Resources Section -->
-    <section class="resources">
-        <h2>Resources</h2>
-        <ul>
-            <li><a href="./Resources/theoremlist.pdf" download>40 theorems and proofs for 21-373 Algebraic Structures, taught by Prof. Bukh</a></li>
-            <li><a href="./Resources/sjbo.pdf" download>Revision notes for SJBO (Singapore Junior Biology Olympiad), updated as of 2020</a></li>
-            <li><a href="./Resources/AP Calculus BC.pdf" download>AP Calculus BC notes</a></li>
-            <li><a href="./Resources/AP Chemistry 2022.pdf" download>AP Chemistry notes</a></li>
-        </ul>
-    </section>
+        <hr class="section-divider">
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-content-width">
+                <ul class="section-bullet-list">
+                    <li>
+                        <div class="skills-fluent">
+                            <h3>Fluent</h3>
+                            <div class="skills-container">
+                                <div class="skill-block">GoLang</div>
+                                <div class="skill-block">Python</div>
+                                <div class="skill-block">C</div>
+                                <div class="skill-block">Standard ML</div>
+                                <div class="skill-block">Unix</div>
+                                <div class="skill-block">Qiskit</div>
+                                <div class="skill-block">Mathematica</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skills-basic">
+                            <h3>Basic Knowledge of</h3>
+                            <div class="skills-container">
+                                <div class="skill-block">Java</div>
+                                <div class="skill-block">JavaScript</div>
+                                <div class="skill-block">Julia</div>
+                                <div class="skill-block">Matlab</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        <!-- Awards Section -->
+        <section id="awards" class="section awards-section">
+            <h2>Awards & Achievements</h2>
+            <ul class="awards-list">
+                <li>Member of Dean's list at CMU for all semesters (2023 - 2025)</li>
+                <li>CMU's MSCF Datathon: Trained an AI trading bot on institutional financial data, ranked #4 overall and #2 in Pittsburgh across 18 active teams</li>
+                <li>Recipient of NUS High School Principal's List (Top 5% of school cohort, 2019, 2020, 2022)</li>
+            </ul>
+        </section>
+
+        <hr class="section-divider">
+        <!-- Resources Section -->
+        <section id="resources" class="section resources-section">
+            <h2>Resources</h2>
+            <ul class="resources-list">
+                <li><a href="#" class="resource-link" data-pdf="./Resources/theoremlist.pdf">40 theorems and proofs for 21-373 Algebraic Structures, taught by Prof. Bukh (scroll down)</a></li>
+                <li><a href="#" class="resource-link" data-pdf="./Resources/sjbo.pdf">Revision notes for SJBO (Singapore Junior Biology Olympiad), updated as of 2020</a></li>
+                <li><a href="#" class="resource-link" data-pdf="./Resources/AP Calculus BC.pdf">AP Calculus BC notes</a></li>
+                <li><a href="#" class="resource-link" data-pdf="./Resources/AP Chemistry 2022.pdf">AP Chemistry notes</a></li>
+                <li><a href="#" class="resource-link" data-pdf="./Yanlin_Chen_resume.pdf">Resume (PDF)</a></li>
+            </ul>
+            <div id="pdf-viewer-container" class="pdf-viewer-container" style="display:none;">
+                <iframe id="pdf-viewer" src="" width="100%" height="600px" frameborder="0"></iframe>
+                <button id="close-pdf">Close</button>
+            </div>
+        </section>
+
+        </main>
+    </div>
 </body>
 </html>

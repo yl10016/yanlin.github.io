@@ -5,3 +5,8 @@ I like making notes, and personally, I think my notes are pretty good, so this i
 Hopefully I don't violate any course policies ;-;
 
 And of courses, all credits/etc go to the Profs who taught those classes.
+
+
+## Links
+* [[Link to the website](https://yl10016.github.io/yanlin.github.io/)]
+* [[Link to the resources section](https://yl10016.github.io/yanlin.github.io/#resources)]

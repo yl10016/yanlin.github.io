@@ -14,7 +14,7 @@
             <div class="sidebar-header">
                 <img src="./dolce.jpg" alt="Yanlin Chen" class="profile-picture">
                 <h1>Yanlin Chen</h1>
-                <p class="sidebar-subtitle">B.S. Computer Science<br>Minor in Mathematics<br>@ CMU</p>
+                <p class="sidebar-subtitle">B.S. in Computer Science<br>Minor in Mathematics<br>Carnegie Mellon University </p>
                 <div class="sidebar-links">
                     <a href="https://github.com/yl10016" target="_blank">GitHub</a>
                     <a href="https://linkedin.com/in/yanlin16" target="_blank">LinkedIn</a>
@@ -186,13 +186,10 @@
         <!-- Resources Section -->
         <section id="resources" class="section resources-section">
             <h2>Resources</h2>
-            <ul class="resources-list">
-                <li><a href="#" class="resource-link" data-pdf="./Resources/theoremlist.pdf">40 theorems and proofs for 21-373 Algebraic Structures, taught by Prof. Bukh (scroll down)</a></li>
-                <li><a href="#" class="resource-link" data-pdf="./Resources/sjbo.pdf">Revision notes for SJBO (Singapore Junior Biology Olympiad), updated as of 2020</a></li>
-                <li><a href="#" class="resource-link" data-pdf="./Resources/AP Calculus BC.pdf">AP Calculus BC notes</a></li>
-                <li><a href="#" class="resource-link" data-pdf="./Resources/AP Chemistry 2022.pdf">AP Chemistry notes</a></li>
-                <li><a href="#" class="resource-link" data-pdf="./Yanlin_Chen_resume.pdf">Resume (PDF)</a></li>
-            </ul>
+            <!-- Resume will be rendered as a folder-style group by the resources script -->
+            <div id="resources-container" class="resources-container">
+                <!-- Folders and resource links will be populated dynamically from resources.json -->
+            </div>
             <div id="pdf-viewer-container" class="pdf-viewer-container" style="display:none;">
                 <iframe id="pdf-viewer" src="" width="100%" height="600px" frameborder="0"></iframe>
                 <button id="close-pdf">Close</button>

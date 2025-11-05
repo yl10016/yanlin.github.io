@@ -1,0 +1,119 @@
+{
+  "resume": "./Yanlin_Chen_resume.pdf",
+  "groups": {
+    "15122 - Principles of Imperative Computation (C)": [
+      {
+        "name": "15122-final.pdf",
+        "path": "./Resources/15122-final.pdf"
+      },
+      {
+        "name": "15122-midterm-1.pdf",
+        "path": "./Resources/15122-midterm-1.pdf"
+      },
+      {
+        "name": "15122-midterm-2.pdf",
+        "path": "./Resources/15122-midterm-2.pdf"
+      }
+    ],
+    "15150 - Functional Programming (Standard ML)": [
+      {
+        "name": "15150-midterm-1.pdf",
+        "path": "./Resources/15150-midterm-1.pdf"
+      },
+      {
+        "name": "15150-midterm-2.pdf",
+        "path": "./Resources/15150-midterm-2.pdf"
+      },
+      {
+        "name": "15150-midterm-3.pdf",
+        "path": "./Resources/15150-midterm-3.pdf"
+      }
+    ],
+    "15151 - Mathematical Foundations for Computer Science (aka Concepts)": [
+      {
+        "name": "15151-midterm-2.pdf",
+        "path": "./Resources/15151-midterm-2.pdf"
+      },
+      {
+        "name": "15151-midterm-3.pdf",
+        "path": "./Resources/15151-midterm-3.pdf"
+      }
+    ],
+    "15210 - Parallel and Sequential Data Structures and Algorithms (Standard ML)": [
+      {
+        "name": "15210-midterm-1.pdf",
+        "path": "./Resources/15210-midterm-1.pdf"
+      },
+      {
+        "name": "15210-midterm-2.pdf",
+        "path": "./Resources/15210-midterm-2.pdf"
+      }
+    ],
+    "15213 - Introduction to Computer Systems (C, x86-64 Assembly)": [
+      {
+        "name": "15213-final-theory-only.pdf",
+        "path": "./Resources/15213-final-theory-only.pdf"
+      }
+    ],
+    "15330 - Introduction to Computer Security (C, x86-64 Assembly)": [
+      {
+        "name": "15330-midterm-1.pdf",
+        "path": "./Resources/15330-midterm-1.pdf"
+      },
+      {
+        "name": "15330-midterm-2.pdf",
+        "path": "./Resources/15330-midterm-2.pdf"
+      },
+      {
+        "name": "15330-midterm-3.pdf",
+        "path": "./Resources/15330-midterm-3.pdf"
+      }
+    ],
+    "21241 - Matrices and Linear Transformations": [
+      {
+        "name": "21241-midterm-1.pdf",
+        "path": "./Resources/21241-midterm-1.pdf"
+      },
+      {
+        "name": "21241-midterm-2.pdf",
+        "path": "./Resources/21241-midterm-2.pdf"
+      }
+    ],
+    "21266 - Vector Calculus (CS version)": [
+      {
+        "name": "21266-final.pdf",
+        "path": "./Resources/21266-final.pdf"
+      }
+    ],
+    "21270 - Introduction to Mathematical Finance": [
+      {
+        "name": "21270-midterm-1.pdf",
+        "path": "./Resources/21270-midterm-1.pdf"
+      },
+      {
+        "name": "21270-midterm-2.pdf",
+        "path": "./Resources/21270-midterm-2.pdf"
+      }
+    ],
+    "21373 - Algebraic Structures (Bukh version)": [
+      {
+        "name": "21373-theorems-list.pdf",
+        "path": "./Resources/21373-theorems-list.pdf"
+      }
+    ],
+    "AP/Olympiads": [
+      {
+        "name": "hs-ap-calculus-bc.pdf",
+        "path": "./Resources/hs-ap-calculus-bc.pdf"
+      },
+      {
+        "name": "hs-ap-chemistry.pdf",
+        "path": "./Resources/hs-ap-chemistry.pdf"
+      },
+      {
+        "name": "hs-sjbo.pdf",
+        "path": "./Resources/hs-sjbo.pdf"
+      }
+    ]
+  }
+}

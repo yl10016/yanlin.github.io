@@ -69,6 +69,26 @@
         "path": "./Resources/15330-midterm-3.pdf"
       }
     ],
+    "15440 - Distributed Systems (Go)": [
+      {
+        "name": "15440-midterm-1.pdf",
+        "path": "./Resources/15440-midterm-1.pdf"
+      },
+      {
+        "name": "15440-midterm-2.pdf",
+        "path": "./Resources/15440-midterm-2.pdf"
+      }
+    ],
+    "10301 - Introduction to Machine Learning": [
+      {
+        "name": "10301-midterm-1.pdf",
+        "path": "./Resources/10301-midterm-1.pdf"
+      },
+      {
+        "name": "10301-midterm-2.pdf",
+        "path": "./Resources/10301-midterm-2.pdf"
+      }
+    ],
     "21241 - Matrices and Linear Transformations": [
       {
         "name": "21241-midterm-1.pdf",
@@ -99,6 +119,12 @@
       {
         "name": "21373-theorems-list.pdf",
         "path": "./Resources/21373-theorems-list.pdf"
+      }
+    ],
+    "21355 - Principles of Real Analysis I": [
+      {
+        "name": "21355-final.pdf",
+        "path": "./Resources/21355-final.pdf"
       }
     ],
     "AP/Olympiads": [

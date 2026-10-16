@@ -3,209 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YL's Portfolio</title>
+    <title>dolce's notes</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="resources.js"></script>
     <script defer src="main.js"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <img src="./dolce.jpg" alt="Yanlin Chen" class="profile-picture">
-                <h1>Yanlin Chen</h1>
-                <p class="sidebar-subtitle">B.S. in Computer Science<br>Minor in Mathematics<br>Carnegie Mellon University </p>
+                <img src="./dolce.jpg" alt="Dolce" class="profile-picture">
+                <h1>dolce</h1>
+                <p class="sidebar-blurb">I like making notes, and I've been told (in the past) they're pretty decent. Anyways, this is mainly a way for me to consolidate those notes/cheatsheets from (almost) all the classes I've taken so far at CMU.</p>
                 <div class="sidebar-links">
-                    <a href="https://github.com/yl10016" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yanlin16" target="_blank">LinkedIn</a>
-                    <a href="#" class="resource-link" data-pdf="./Yanlin_Chen_resume.pdf">Resume</a>
+                    <a href="https://github.com/yl10016" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/yanlin16" target="_blank" rel="noreferrer">LinkedIn</a>
                 </div>
             </div>
-            <nav class="sidebar-nav">
-                <ul class="sidebar-nav-list">
-                    <li><a href="#work-experience" class="nav-link active">&ndash;&nbsp;&nbsp;Work Experience</a></li>
-                    <li><a href="#research-experience" class="nav-link">&ndash;&nbsp;&nbsp;Research Experience</a></li>
-                    <li><a href="#projects" class="nav-link">&ndash;&nbsp;&nbsp;Projects</a></li>
-                    <li><a href="#skills" class="nav-link">&ndash;&nbsp;&nbsp;Skills</a></li>
-                    <li><a href="#awards" class="nav-link">&ndash;&nbsp;&nbsp;Awards</a></li>
-                    <li><a href="#resources" class="nav-link">&ndash;&nbsp;&nbsp;Resources</a></li>
-                </ul>
-            </nav>
+            <div class="sidebar-extra">
+                <p>Every so often, I meet new people who play things that I then need to get less bad at. Right now, that's GamePigeon's WordHunt and Anagrams. I wanted an easier way to start new games than sending them to myself (+ some features to make pr*ctising/learning easier). So please pardon the slop ;-; <a id="practice-reveal" href="#games">(click here)</a></p>
+            </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="main-content">
-        <hr class="section-divider">
-        <!-- Work Experience Section -->
-        <section id="work-experience" class="section experience-section">
-            <h2>Work Experience</h2>
-            <ul class="section-bullet-list">
-                <li>
-                    <div class="exp-card">
-                        <h3>Network Development Intern, Amazon, Cupertino <span class="exp-date">May 2026 - July 2026</span></h3>
-                        <ul>
-                            <li>Optics</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="exp-card">
-                        <h3>Network Product (SWE) Intern, Cisco, San Jose <span class="exp-date">May 2025 - Aug 2025</span></h3>
-                        <ul>
-                            <li>Developed AI-driven, remotely hosted and Dockerized Flask application to automate bug triage and root cause analysis (RCA) by retrieving and correlating cluster, device, and codebase data using LangChain agents enhanced with API/CLI tools, MCP servers, local regex search, and token usage tracking (and general traces monitoring) via Langfuse.</li>
-                            <li>Integrated the solution as a VSCode extension to enable Copilot-powered, inline code fix suggestions directly within the developer workflow, and implemented fast similarity search of existing CDETS bugs using a Milvus vector database with TF-IDF and cosine matching to surface relevant existing issues.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="exp-card">
-                        <h3>Physics Instructor at NUS High School of Math and Science <span class="exp-date">2021 - 2023</span></h3>
-                        <ul>
-                            <li>Trained a select group of students in preparation for national physics research tournaments: coached students in physics, mathematical modelling, programming, electronic circuit and mechanical setup construction and design.</li>
-                            <li>Taught participants Mathematica and Computational Fluid Dynamics software such as COMSOL and Ansys.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </section>
+            <hr class="section-divider">
+            <section id="resources" class="section resources-section">
+                <h2>Notes</h2>
+                <div id="resources-container" class="resources-container">
+                    <p>Loading resources…</p>
+                </div>
+            </section>
 
-        <hr class="section-divider">
-        <!-- Research Experience Section -->
-        <section id="research-experience" class="section experience-section">
-            <h2>Research Experience</h2>
-            <ul class="section-bullet-list">
-                <li>
-                    <div class="exp-card">
-                        <h3>Chamanzar Group, Carnegie Mellon University <span class="exp-date">Sept 2024 - Present</span></h3>
-                        <ul>
-                            <li> Designed a microwave antenna (via Ansys HFSS simulations) to drive spin transitions in SiC quantum photonic devices, to detect weak magnetic fields generated by neural activity using the Zeeman splitting effect. </li>
-                            <li> Characterized Optically Detected Magnetic Resonance (ODMR) spectra by analyzing resonance dip positions (by sweeping microwave frequency, and recording fluorescence intensity changes between microwave-on/off conditions). </li>
-                        </ul>
+            <section id="games" class="section game-practice-section" hidden>
+                <h2>(not) wordpigeon</h2>
+                <div class="game-controls">
+                    <div class="game-tabs">
+                        <button class="tab active" type="button" aria-selected="true" data-game="anagrams">Anagrams</button>
+                        <button class="tab" type="button" aria-selected="false" data-game="wordhunt">Word Hunt</button>
                     </div>
-                </li>
-                <li>
-                    <div class="exp-card">
-                        <h3>Institute of High Performance Computing, A*STAR <span class="exp-date">May 2024 - July 2024</span></h3>
-                        <ul>
-                            <li>Built and ran circuits in Qiskit to develop and evaluate a zero-noise extrapolation (ZNE) approach using the Parameter Shift Rule (PSR), to perform error mitigation without increasing the circuit depth.</li>
-                        </ul>
+                    <div class="mode-switch">
+                        <button class="mode active" type="button" aria-pressed="true" data-mode="timed">Timed</button>
+                        <button class="mode" type="button" aria-pressed="false" data-mode="untimed">Untimed</button>
                     </div>
-                </li>
-                <li>
-                    <div class="exp-card">
-                        <h3>Institute of High Performance Computing, A*STAR <span class="exp-date">Dec 2022 - June 2023</span></h3>
-                        <ul>
-                            <li>Developed python-based platform to analyze user data for Ang et al.’s path-drawing option generation task, enabling objective quantification of creativity without cultural bias.</li>
-                            <li>Implemented platform in a cognitive study to derive uniqueness and diversity scores for each participant.</li>
-                            <li>Obtained technology disclosure and published in Scandinavian Journal of Psychology (<a href="https://doi.org/10.1111/sjop.13112" target="_blank">doi.org/10.1111/sjop.13112</a>).</li>
-                        </ul>
+                </div>
+                <div class="game">
+                    <div class="game-head">
+                        <div><small>Score</small><strong id="score">0</strong></div>
+                        <div class="game-title"><b id="game-name">Anagrams</b><span id="game-rule">Use each letter once</span></div>
+                        <div class="right"><small>Time</small><strong id="timer">01:00</strong></div>
                     </div>
-                </li>
-            </ul>
-        </section>
-
-        <hr class="section-divider">
-        <!-- Projects Section -->
-        <section id="projects" class="section projects-section">
-            <h2>Projects</h2>
-            <ul class="section-bullet-list">
-                <li>
-                    <div class="proj-card">
-                        <h3>Hackberry Pi (Hardware) Hackathon <span class="proj-date">March 2026</span></h3>
-                        <ul>
-                            <li>Engineered an interactive aircraft hologram system via a 3D frustum projection pipeline that maps OpenSky API data onto perspective-correct views, with joystick/controller input for live map panning, won second place in the general track.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="proj-card">
-                        <h3>Distributed Systems (in Go) <span class="proj-date">Sept 2025 - Dec 2025</span></h3>
-                        <ul>
-                            <li> Developed a large-scale, multi-component system that communicated via Remote Procedure Calls and used the Actor Model to coordinate work across cores and machines, enforcing consistency guarantees for replicated data</li>
-                            <li> Implemented the Raft consensus algorithm, a replicated state machine protocol that serves as an alternative to Paxos, enabling leader election, log replication, and consistent fault-tolerant state across distributed nodes</li>
-                            <li>Built a custom reliable transport protocol (Live Sequence Protocol) on top of UDP that leveraged goroutines and sliding-window mechanisms to ensure ordered delivery, integrity checks, exponential backoff retransmissions, and fault-tolerant client–server coordination for parallel hashing tasks (used in a distributed bitcoin miner scenario)</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="proj-card">
-                        <h3>Computer Systems and Programs (in C) <span class="proj-date">Aug 2024 - Dec 2024</span></h3>
-                        <ul>
-                            <li>Developed a proxy (compatible with Mozilla Firefox), shell (back/foreground job control and I/O redirection), malloc (best fit with segregated lists), and cache (LRU) simulator totaling around 4000 lines.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="proj-card">
-                        <h3>Micro-mechanical analysis of shape memory based engines <span class="proj-date">Nov 2019 - Aug 2021</span></h3>
-                        <ul>
-                            <li>Conducted original research published in peer-reviewed journal Appl. Phys. A. (<a href="https://link.springer.com/article/10.1007/s00339-021-04810-4" target="_blank">doi.org/10.1007/s00339-021-04810-4</a>).</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <hr class="section-divider">
-        <!-- Skills Section -->
-        <section id="skills" class="section skills-section">
-            <h2>Technical Skills</h2>
-            <div class="skills-content-width">
-                <ul class="section-bullet-list">
-                    <li>
-                        <div class="skills-fluent">
-                            <h3>Fluent</h3>
-                            <div class="skills-container">
-                                <div class="skill-block">GoLang</div>
-                                <div class="skill-block">Python</div>
-                                <div class="skill-block">C</div>
-                                <div class="skill-block">Standard ML</div>
-                                <div class="skill-block">Unix</div>
-                                <div class="skill-block">Qiskit</div>
-                                <div class="skill-block">Mathematica</div>
+                    <div class="timer-bar"><i id="timer-progress"></i></div>
+                    <div class="game-body">
+                        <div class="play-area">
+                            <div class="board-wrap">
+                                <svg id="trace-layer" aria-hidden="true"></svg>
+                                <div class="board anagram-board" id="board" aria-label="Letter board"></div>
+                            </div>
+                            <div class="current"><b id="current-word"></b><span id="message"></span></div>
+                            <form id="word-form" autocomplete="off">
+                                <label class="sr-only" for="word-input">Enter a word</label>
+                                <input id="word-input" autocapitalize="characters" spellcheck="false" maxlength="16">
+                                <button>Enter</button>
+                            </form>
+                            <div class="game-actions">
+                                <button id="start" type="button" disabled>Loading…</button>
+                                <button id="hint" type="button" disabled>Hint</button>
+                                <button id="shuffle" type="button">Shuffle</button>
+                                <button id="end" type="button" disabled>End game</button>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="skills-basic">
-                            <h3>Basic Knowledge of</h3>
-                            <div class="skills-container">
-                                <div class="skill-block">Java</div>
-                                <div class="skill-block">JavaScript</div>
-                                <div class="skill-block">Julia</div>
-                                <div class="skill-block">Matlab</div>
-                            </div>
+                        <div class="found-panel">
+                            <div class="found-head"><span>Found</span><span id="found-count">0 words</span></div>
+                            <div class="found" id="found"></div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <hr class="section-divider">
-        <!-- Awards Section -->
-        <section id="awards" class="section awards-section">
-            <h2>Awards & Achievements</h2>
-            <ul class="awards-list">
-                <li>Member of Dean's list at CMU for all semesters (2023 - 2025)</li>
-                <li>CMU's MSCF Datathon: Trained an AI trading bot on institutional financial data, ranked #4 overall and #2 in Pittsburgh across 18 active teams</li>
-                <li>Recipient of NUS High School Principal's List (Top 5% of school cohort, 2019, 2020, 2022)</li>
-            </ul>
-        </section>
-
-        <hr class="section-divider">
-        <!-- Resources Section -->
-        <section id="resources" class="section resources-section">
-            <h2>Resources</h2>
-            <!-- Resume will be rendered as a folder-style group by the resources script -->
-            <div id="resources-container" class="resources-container">
-                <!-- Folders and resource links will be populated dynamically from resources.json -->
-            </div>
-            <div id="pdf-viewer-container" class="pdf-viewer-container" style="display:none;">
-                <iframe id="pdf-viewer" src="" width="100%" height="600px" frameborder="0"></iframe>
-                <button id="close-pdf">Close</button>
-            </div>
-        </section>
-
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>
